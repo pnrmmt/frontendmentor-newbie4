@@ -1,0 +1,161 @@
+/* font-family: 'Outfit', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif; 
+
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 23px;
+    max-width: 360px;
+    
+}
+/* containere max-width ve padding verdikten sonra img max-width %100 yap */
+
+.eth{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+    border-bottom: 1px solid hsl(215, 32%, 27%) ;
+}
+
+.eth-blue{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.eth-blue span{
+
+    margin-left: 9px;
+ 
+}
+.eth-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.eth-clock span{
+    margin-left: 5px;
+    
+}
+
+.eq-img img{
+    
+    max-width: 100%;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    
+}
+
+.eq-img{
+    position: relative;
+}
+
+.eq-img div{
+    position: absolute;
+    background-color:hsl(178, 100%, 50%, 75%); 
+    width: 100%;
+    height: calc(100% - 24px);
+    z-index: 999;
+    border-radius: 14px;
+    top:0;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+.eq-img div:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.eq-img div img{
+   position: absolute;
+   left:50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+}
+
+.creation img{
+    max-width: 40px;
+    margin-top: 15px;
+    border: 1px solid;
+    border-color: wheat;
+    border-radius: 50%;
+
+}
+.creation{
+    display: flex;
+    
+    
+
+}
+.creation .cre {
+    color: hsl(215, 51%, 70%);
+    margin-top: 25px;
+    margin-left: 15px;
+    
+
+}
+
+.creation .jul{
+    color: hsl(0, 0%, 100%);
+    margin-top: 25px;
+    margin-left: 6px;
+    font-weight: 300;
+    
+}
+
+.creation .jul:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    
+    
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        width: 300px;
+        margin: 0 auto 1rem;
+    }
+}
